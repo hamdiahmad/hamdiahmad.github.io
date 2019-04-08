@@ -1,0 +1,247 @@
+<html>
+    <link rel="shortcut icon" href="ikon2.ico">
+    <head>
+        <title> Hamdi Ahmad Rizaldi
+        </title>
+        <meta name="viewport" content="width=device-width, initialscale=1">
+        <style>
+            .container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 20px 20px;
+                grid-gap: 0px;
+                background: lightskyblue;
+            }
+            .topbar {
+                background: lightblue;
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .navbar {
+                background: #333;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5; 
+            }
+            body {margin: 0;}
+            ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+            ul.navbar li {float: left;}
+            ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            ul.navbar li a:hover:not(.active) {background-color: lightseagreen;}
+            ul.navbar li a.active {background-color: lightseagreen;}
+            ul.navbar li.right {float: right;}
+            @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            }
+            .slidder {
+                background: transparent;
+                margin-top: 50px;
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                width: auto;
+                height: auto;
+            }
+            .slidder{
+                overflow: hidden;
+            }
+            .isi img {
+                width: 20%;
+                float: left;
+            }
+            .isi {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                animation: 15s slider infinite;
+                left: 0;
+            }
+            
+            @keyframes slider {     
+            0% {
+                left: 0;  
+            }          
+            20% {
+                left: 0; ; 
+            }     
+            25% {
+                left: -100%;  
+            }       
+            45% {
+                left: -100%;  
+            }     
+            50% {
+                left: -200%;  
+            }     
+            70% {
+                left: -200%;  
+            }    
+            75% {
+                left: -300%;  
+            }   	
+            95% {
+                left: -300%;
+            }   	
+            100% {
+                left: -400%; 
+            }
+        }
+
+            .content{
+                grid-row-start: 4;
+                max-width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                background: transparent;
+                height: auto;
+                overflow: hidden;
+            }
+            .content1{
+                background: #222;      
+                width: 200px;
+                margin: 45px;
+                padding: 25px;
+                float: left;
+            }
+            .content2{
+                background: #333;       
+                width: 500px;
+                margin: 45px;
+                padding: 25px;
+                float: left;
+            }
+            .content3{
+                background: #222;       
+                width: 200px;
+                margin: 45px;
+                padding: 25px;
+                float: left;
+            }
+
+            @media screen and (max-width: 1080px;){
+                .content{
+                    width: 100%;
+                }
+                .content1{
+                    width: 25%;
+                }
+                .content2{
+                    width: 68%;
+                    float: right;
+                }
+                .content3{
+                    clear: both;
+                    padding: 1% 4%;
+                    width: auto;
+                    float: none;
+                }
+            }
+            
+            @media screen and (max-width: 780px){
+                .content1{
+                    width: auto;
+                    float: none;
+                }
+                .content2{
+                    width: auto;
+                    float: none;
+                }
+                .content3{
+                    width: auto;
+                    float: none;
+                }
+            }
+
+            .footer{
+                grid-row-start: 5;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                max-width: 100%;
+                width: auto;
+                height: auto;
+                padding: 5px;
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class='topbar'><font face="arial" size=2pt color=black><b></b><marquee loop="100"> SELAMAT DATANG </marquee></b></font></div>
+            <div class='navbar'>
+                <nav>
+                    <ul class="navbar">
+                        <li><a class="active" href="index.html">ABOUT ME</a></li>
+                        <li><a href="hobi.html">HOBBY & ENTHUSIAST</a></li>
+                        <li><a href="galeri.html">GALLERY</a></li>
+                        <li><a href="artikel.html">ARTICLE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class='slidder'>
+            <div class='isi'>
+                <img src="gambar1.png"alt>
+                <img src="gambar3.png"alt>
+                <img src="gambar2.png"alt>
+                <img src="gambar4.png"alt>
+                <img src="gambar1.png"alt>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+                <font face="arial" size="2pt" color="white">
+                <p align="center">
+                <b>DESIGN</b>
+                </p>
+                <br>
+                <p align="justify">
+                    <font size="2pt color="white">
+                    Di website ini saya membuka jasa untuk membuat berbagai macam design dari beberapa produk yang diinginkan contohnya seperti kaos/kemeja, jaket, logo, nametag, kop surat dan lain-lain. Jika berminat bisa hubungi kontak atau sosial media saya di bagian bawah halaman ini. Anda juga bisa melihat beberapa hasil design saya di bagian gallery. Terima kasih
+                </p>
+            </div>
+            <div class="content2">
+                <font face="arial" size="2pt" color="white">
+                <p align="center">
+                <b>PROFILE</b>
+                </p>
+                <br>
+                <p align="justify">
+                    <font size="2pt">
+                    Perkenalkan nama saya Hamdi Ahmad Rizaldi biasa di panggil Hamdi atau Aldi, lahir 28 Juni 1998 di Tangerang tepatnya berumur 20 tahun. Saat ini saya sedang menjalani kuliah di Perguruan Tinggi LEPISI Tangerang jurusan TEKNIK INFORMATIKA semester 6. Jika ingin mengenal lebih jauh tentang saya, bisa cek sosial media saya yang berada di bagian bawah halaman ini. Terima Kasih
+                </p>
+            </div>
+            <div class="content3">
+                <font face="arial" size="2pt" color="white">
+                <p align="center">
+                <b>FUTSAL DAN GAMING PLAYER</b></p>
+                <br>
+                <p align="justify">
+                    <font size="2pt">
+                    Selain design, saya juga bisa sebagai free player futsal dan gaming terutama Mobile Legends. Sudah banyak turnamen yang saya ikuti sebagai pemain futsal dan player Mobile Legends dan hasilnya lumayan bagus. Jika berminat bisa hubungi kontak atau sosial media saya di bagian bawah halaman ini. Terima Kasih
+                </p>
+            </div>
+        </div>
+
+        <div class='footer'>
+            <font face=arial size=2pt color=white><b>
+            <p> Copyright©2019</p>
+            <p>HamdiAhmadRizaldi</p>
+            <p>Instagram : @hamdiahmadrizaldi</p>
+            <p>Facebook : Hamdi Ahmad Rizaldi</p>
+        </div>
+    </body>
+</html>

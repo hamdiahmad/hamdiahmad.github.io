@@ -1,0 +1,66 @@
+<html>
+    <link rel= "shortcut icon" href="favicon.ico">
+<head>
+    <title>Hary Budi S
+    </title>
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <style>
+            .container{
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 30px ;
+                grid-gap: 0px;
+            }
+            .topbar {
+                background: lightseagreen;
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .navbar{
+                background: black;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            body {margin: 0;}
+            ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+            ul.navbar li {float: left;}
+            ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            ul.navbar li a:hover:not(.active) {background-color: #111;}
+            ul.navbar li a.active {background-color: lightseagreen;}
+            ul.navbar li.right {float: right;}
+            @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class='topbar'> <font face="arial" size=2pt color="white"> <b> 
+        <marquee direction="right" loop="1000"> WOLCOME TO NEGARA +62 </b> </font> </marquee> </div>
+        <div class='navbar'>
+            <nav>
+                <ul class="navbar">
+                    <li> <a class="active" href="index.html"> ABOUT ME </a> </li>
+                    <li> <a href="Hobby.html"> HOBBY & ENTHUSIAST </a> </li>
+                    <li> <a href="gallery.html"> GALLERY </a> </li>
+                    <li> <a href="artikel.html"> ARTICLE </a> </li>
+                </ul>
+            </nav>
+        </div>
+</body>
+</html>

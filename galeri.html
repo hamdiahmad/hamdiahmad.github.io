@@ -1,0 +1,145 @@
+<html>
+    <link rel="shortcut icon" href="ikon2.ico">
+    <head>
+        <title> Hamdi Ahmad Rizaldi
+        </title>
+        <meta name="viewport" content="width=device-width, initialscale=1">
+        <style>
+            .container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 20px 20px;
+                grid-gap: 0px;
+                background: lightskyblue;
+            }
+            .topbar {
+                background: lightblue;
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .navbar {
+                background: #333;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5; 
+            }
+            body {margin: 0;}
+            ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+            ul.navbar li {float: left;}
+            ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            ul.navbar li a:hover:not(.active) {background-color: lightseagreen;}
+            ul.navbar li a.active {background-color: lightseagreen;}
+            ul.navbar li.right {float: right;}
+            @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            }
+            .content{
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                max-width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+            .galeri {      
+                width: 100%;
+                margin: 50px;
+                height: auto;
+            }
+            .image1{
+                width: 250px;
+                margin: 20px;
+                padding: 20px;
+                margin-top: 15px;
+                float: left;
+            }
+            .image1 img {
+                width: 300px;
+            }
+
+            @media (max-width: 1024px)
+            .image1 img {
+                width: 300px;
+            }
+            @media (max-width: 800px)
+            .image1 img {
+                width: 250px;
+            }
+            @media (max-width: 768px)
+            .image1 img {
+                width: 200px;
+            }
+            .footer{
+                grid-row-start: 4;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                max-width: 100%;
+                height: auto;
+                padding: 5px;
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class='topbar'><font face="arial" size=2pt color=black><b></b><marquee loop="100"> SELAMAT DATANG </marquee></b></font></div>
+            <div class='navbar'>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="index.html">ABOUT ME</a></li>
+                        <li><a href="hobi.html">HOBBY & ENTHUSIAST</a></li>
+                        <li><a class="active" href="galeri.html">GALLERY</a></li>
+                        <li><a href="artikel.html">ARTICLE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                    <div class="galeri">
+                    <font face=arial size=5pt color=black></b>
+                        <b>GALERI</b>
+                    </div>
+                    <div class="image1">
+                        <img src="galeri/logo2.png"alt>
+                        </div>
+                    <div class="image1">
+                        <img src="galeri/gambar5.png"alt>
+                        </div>
+                    <div class="image1">
+                        <img src="galeri/gambar6.png"alt>
+                        </div>
+                    <div class="image1">
+                        <img src="galeri/gambar7.png"alt>
+                        </div>
+                    <div class="image1">
+                        <img src="galeri/logo3.png"alt>
+                        </div>
+                    <div class="image1">
+                        <img src="galeri/gambar9.png"alt>
+                        </div>
+                    <div class="image1">
+                        <img src="galeri/gambar10.png"alt>
+                        </div>
+            </div>
+            <div class='footer'>
+                <font face=arial size=2pt color=white><b>
+                <p>Copyright©2019</p>
+                <p>HamdiAhmadRizaldi</p>
+                <p>Instagram : @hamdiahmadrizaldi</p>
+                <p>Facebook : Hamdi Ahmad Rizaldi</p>
+            </div>
+    </body>
+</html>
